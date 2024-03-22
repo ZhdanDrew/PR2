@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="navigator-link" data-redirect="catalog">Catalog</a>
+
+      <div class="cart-wrapper">
+        <div id="cart-count"></div>
+        <a href="#" class="navigator-link" data-redirect="cart">Cart</a>
+      </div>
+      
+    </header>
+
+    <main>
+      <div class="view" data-view="catalog">
+        <h1>Catalog</h1>
+
+        <div id="catalog-items" class="cards-wrapper"></div>
+      </div>
+
+      <div class="view" data-view="cart">
+        <div class="cart-header">
+          <h1>Cart</h1>
+          <button id="buy-all-btn">Buy all for: </button>
+        </div>
+
+        <div id="cart-items" class="cards-wrapper"></div>
+      </div>
+    </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

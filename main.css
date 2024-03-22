@@ -1,0 +1,143 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background: black;
+    color: white;
+}
+
+header .cart-wrapper {
+    position: relative;
+}
+
+header .cart-wrapper #cart-count {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: -15px;
+    top: -5px;
+    background: darkred;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 3px;
+}
+
+header a {
+    font-size: 30px;
+    color: white;
+    outline: none;
+}
+
+.view {
+    width: 100%;
+    min-height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .<div class="cart-header">
+<h1>Cart</h1>
+<button id="buy-all-btn">Buy all for: </button>
+</div> */
+
+.cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart-header #buy-all-btn {
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: lightseagreen;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 18px;
+}
+
+.cards-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards-wrapper .item-card {
+    width: 300px;
+    max-height: 750px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0.4px grey;
+    border-radius: 15px;
+}
+
+.cards-wrapper .item-card article {
+    width: 100%;
+    height: 270px;
+}
+
+.cards-wrapper .item-card .buttons-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.cards-wrapper .item-card button {
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    border: none;
+    background: lightseagreen;
+    padding: 5px 5px;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+}
+
+.cards-wrapper .item-card button.remove-button {
+    background: lightgray;
+    color: black;
+}
+
+.cards-wrapper .item-card button.remove-all-button {
+    background: darkred;
+}
+
+.cards-wrapper .item-card h4 {
+    margin: 10px 0;
+}
+
+.cards-wrapper .item-card p {
+    margin: 5px;
+}
+
+.cards-wrapper .item-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
